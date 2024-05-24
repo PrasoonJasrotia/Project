@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Healthcare</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #b0cffc 0%, #985ef0 100%);
+            font-family: Arial, sans-serif;
+            <!-- background-color: #cc1212; -->
+            padding: 10900px;
+        }
+        
+        h1 {
+            color: #090808;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+        
+        .result {
+            background-color: hsla(273, 67%, 52%, 0.261);
+            padding: 100px;
+            border-radius: 50px;
+            box-shadow: 0 2px 4px rgba(237, 237, 237, 0.1);
+            text-align: center;
+        }
+        
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .message {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mental Health Report</h1>
+    <div class="result">
+        <p>Thank you for submitting the questionnaire!</p>
+        <p class="score">Your total PHQ-9 score is: {{ total_score }}</p>
+        <p class="message">We appreciate your participation.</p>
+        <p>NOTE : PHQ-9 scores of 5,10,15, and 20 represent mild,moderate,moderately sever and severe depression.</p>
+    </div>
+</body>
+</html>

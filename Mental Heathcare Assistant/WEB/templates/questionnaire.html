@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <body>
+        <div class="running-headline">
+            <h1>This is just to give you an idea</h1>
+        </div>
+    </body>
+    <style>
+        .running-headline {
+
+            width: 100%;
+            background-color: ;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 8px;
+            animation: marquee 10s linear infinite;
+        }
+        
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</header>    
+<head>
+    <title>PHQ-9 Questionnaire</title>
+    
+    <style>
+        
+        body {
+            background: linear-gradient(135deg, #b0cffc 0%, #985ef0 100%);
+            font-family: Arial, sans-serif;
+            <!-- background-color: #f43333; -->
+            padding: 20px;
+        }
+        
+        h1 {
+            background-color: #985ef0;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: auto;
+            box-shadow:0 2px 4px rgba(61, 45, 45, 0.996);
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        form {
+            background:linear-gradient(135deg, #98baec 0%, #985ef0 100%) ;
+            
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .question {
+            margin-bottom: 20px;
+        }
+        
+        .question p {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .response-option {
+            margin-left: 20px;
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>PHQ-9 Questionnaire</h1>
+    <form action="/submit" method="post">
+        <p>Over the last 2 weeks, how often have you been bothered by any of the following problems?</p>
+        <div class="question">
+            <p>Little interest or pleasure in doing things</p>
+            <div class="response-option">
+                <input type="radio" name="q1" value="0" required> Not at all<br>
+                <input type="radio" name="q1" value="1"> Several days<br>
+                <input type="radio" name="q1" value="2"> More than half the days<br>
+                <input type="radio" name="q1" value="3"> Nearly every day
+            </div>
+        </div>
+        <div class="question">
+            <p>Feeling down, depressed, or hopeless</p>
+            <div class="response-option">
+                <input type="radio" name="q2" value="0" required> Not at all<br>
+                <input type="radio" name="q2" value="1"> Several days<br>
+                <input type="radio" name="q2" value="2"> More than half the days<br>
+                <input type="radio" name="q2" value="3"> Nearly every day
+            </div>
+
+        </div>
+        <div class="question">
+            <p>Trouble falling or staying asleep, or sleeping too much</p>
+            <div class="response-option">
+                <input type="radio" name="q3" value="0" required> Not at all<br>
+                <input type="radio" name="q3" value="1"> Several days<br>
+                <input type="radio" name="q3" value="2"> More than half the days<br>
+                <input type="radio" name="q3" value="3"> Nearly every day
+            </div>
+        <div> 
+            <div class="question">
+                <p>Feeling tired or having little energy</p>
+                <div class="response-option">
+                    <input type="radio" name="q4" value="0" required> Not at all<br>
+                    <input type="radio" name="q4" value="1"> Several days<br>
+                    <input type="radio" name="q4" value="2"> More than half the days<br>
+                    <input type="radio" name="q4" value="3"> Nearly every day
+                </div>
+            <div>
+                <div class="question">
+                    <p>Poor appetite or overeating</p>
+                    <div class="response-option">
+                        <input type="radio" name="q5" value="0" required> Not at all<br>
+                        <input type="radio" name="q5" value="1"> Several days<br>
+                        <input type="radio" name="q5" value="2"> More than half the days<br>
+                        <input type="radio" name="q5" value="3"> Nearly every day
+                    </div>
+                <div>
+                    <div class="question">
+                        <p>Feeling bad about yourself — or that you are a failure or 
+                            have let yourself or your family down </p>
+                        <div class="response-option">
+                            <input type="radio" name="q6" value="0" required> Not at all<br>
+                            <input type="radio" name="q6" value="1"> Several days<br>
+                            <input type="radio" name="q6" value="2"> More than half the days<br>
+                            <input type="radio" name="q6" value="3"> Nearly every day
+                        </div>
+                    <div>
+                        <div class="question">
+                            <p>Trouble concentrating on things, such as reading the 
+                                newspaper or watching television </p>
+                            <div class="response-option">
+                                <input type="radio" name="q7" value="0" required> Not at all<br>
+                                <input type="radio" name="q7" value="1"> Several days<br>
+                                <input type="radio" name="q7" value="2"> More than half the days<br>
+                                <input type="radio" name="q7" value="3"> Nearly every day
+                            </div>
+                        <div>   
+                            <div class="question">
+                                <p>Moving or speaking so slowly that other people could have 
+                                    noticed? Or the opposite — being so fidgety or restless 
+                                    that you have been moving around a lot more than usual  </p>
+                                <div class="response-option">
+                                    <input type="radio" name="q8" value="0" required> Not at all<br>
+                                    <input type="radio" name="q8" value="1"> Several days<br>
+                                    <input type="radio" name="q8" value="2"> More than half the days<br>
+                                    <input type="radio" name="q8" value="3"> Nearly every day
+                                </div>
+                            <div>    
+                            <div class="question">
+                                <p>Thoughts that you would be better off dead or of hurting 
+                                    yourself in some way </p>
+                                <div class="response-option">
+                                    <input type="radio" name="q9" value="0" required> Not at all<br>
+                                    <input type="radio" name="q9" value="1"> Several days<br>
+                                    <input type="radio" name="q9" value="2"> More than half the days<br>
+                                    <input type="radio" name="q9" value="3"> Nearly every day
+                                </div>
+                            <div>
+                                
+                                
+
+        <!-- Add more questions here -->
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>
